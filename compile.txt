@@ -1,0 +1,30 @@
+pipをアップグレードするには以下のコマンドを実行します。
+
+C:¥Users¥Taro> py -m pip install -U pip
+# または
+C:¥Users¥Taro> py -m pip install --upgrade pip
+ここで、pip自体のアップグレードでエラーが表示される場合は、以下のようにさらに--force-reinstallオプションを付けて再度実行してください。
+
+C:¥Users¥Taro> py -m pip install --force-reinstall -U pip
+# または
+C:¥Users¥Taro> py -m pip install --force-reinstall --upgrade pip
+
+
+
+pip install pyinstaller
+-----------------------
+
+>cd C:\Users\admin\PycharmProjects\test
+
+>pyinstaller a.py --onefile --noconsole
+
+:pythonと同じファイル名で同じフォルダで.batにして保存し実行
+@echo off
+
+set FileName=%~n0
+
+cd /d %~dp0
+pyinstaller %FileName%.py --onefile --noconsole
+
+exit
+::::::::::::::::::::::::::::::::::::::::
