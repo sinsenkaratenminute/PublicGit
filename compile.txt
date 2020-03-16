@@ -28,3 +28,4 @@ pyinstaller %FileName%.py --onefile --noconsole
 
 exit
 ::::::::::::::::::::::::::::::::::::::::
+追加
