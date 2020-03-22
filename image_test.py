@@ -9,7 +9,7 @@ SURFACE = pygame.display.set_mode((900,900))
 FPSCLOCK = pygame.time.Clock()
 
 def main():
-    logo = pygame.image.load("pythonlogo.png")
+    logo = pygame.image.load("invater.jpg")
 
     while True:
         for event in pygame.event.get():
@@ -34,8 +34,9 @@ def main():
         pygame.draw.polygon(SURFACE,(255,0,0),pointlist1)
 
         #左下が（100,100）の位置にロゴを描写
-        SURFACE.blit(logo,(100,100))
-
+        SURFACE.blit(logo, (10, 10))
+        # SURFACE.blit(logo,(500,500))
+        # SURFACE.blit(logo, (700, 500))
         pygame.display.update()
         FPSCLOCK.tick(10)
 
